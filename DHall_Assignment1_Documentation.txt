@@ -1,0 +1,32 @@
+Danielle Hall
+IDCE 376 Assignment 1 Urban Green Spaces
+
+Objectives: 
+Assess distribution of green spaces in Maine and within the city of Portland using OSM data.
+Learn how to use PostgreSQL with the PostGIS extension, and familiarize with pgAdmin
+
+Outline of steps taken:
+
+1. In PgAdmin, created new database called urban_green_spaces and enabled the PostGIS extension using SQL query window
+
+2. Set up GitHub repo, making sure everything, GitBash, is installed
+ 	- Created GitHub repo on github web
+3. Create gitignore using texteditor, copy into appropriate folder, add and commit to git repo
+4. Dataset Downloaded for Maine 
+	- Downloaded OSM data from Geofabrick: https://download.geofabrik.de/north-america/us/maine.html 
+5. Import OSM data to database
+	- In command prompt, attempt to import data
+	- Needed to enable PostGIS,using CREATE EXTENSION postgis; command in SQL Shell
+	- Return to command prompt, run basic command to use osm2pgsql tool to import the data
+
+6. View data in pgAdmin and test query
+7. Create portlandmaine_greenspaces table in pgAdmin using attached SQL queries
+8. Visualized portlandmaine_greenspaces table and selected parks within the city of Portland only and exported to Assignment folder
+
+Results of Example Queries:
+
+Query 1: Total green space in Maine 409,887,357.62 meters squared
+Query 2: Mount Blue State Park 79,966,378.83 meters squared
+Query 3: Barrett's Park 59.65 meters squared
+Query 4: Five largest green spaces in Maine:
+Mount Blue State Park, Mount Blue State Park (other area), Androscoggin Riverlands State Park, Cutler Coast Public Land, Kennebec Highlands
